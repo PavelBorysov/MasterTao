@@ -1,5 +1,5 @@
   $( document ).ready(function() {
-    $('.single-item').slick();
+    $('.first-screen-slider').slick();
     Fancybox.bind('[data-fancybox="gallery"]', {
 
     })

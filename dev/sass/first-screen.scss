@@ -1,3 +1,26 @@
-h1 {
-    color: blue;
+.first-screen {
+    .slick-slide {
+        padding: 163px 0 228px;
+    }
+
+&__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 126%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+&__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 135.5%;
+    margin-bottom: 37px;
+}
+
+button {
+    background: $color-primary;
+    border: none;
+}
+
 }

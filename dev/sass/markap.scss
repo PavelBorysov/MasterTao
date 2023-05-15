@@ -1,5 +1,6 @@
  .col-md-4 {
-    border: 2px solid #ffffff;
+    border: $br-primary;
+    padding: 30px;
  }
  .color-item {
     width: 100%;
@@ -9,16 +10,20 @@
  
  .color-item-1 {
     background: $color-primary;
+    border: $br-primary;
  }
 
  .color-item-2 {
     background: $color-secondary;
+    border: $br-primary;
  }
 
  .color-item-3 {
     background: $bg-primary;
+    border: $br-primary;
  }
 
  .color-item-4 {
     background: $bg-secondary;
+    border: $br-primary;
  }
