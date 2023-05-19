@@ -18,9 +18,47 @@
     margin-bottom: 37px;
 }
 
-button {
-    background: $color-primary;
-    border: none;
+.btn {
+    display: flex;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 146%;
+    border-radius: 90px;
+    padding: 13px 17px;
+    margin-bottom: 10px;
+    &:hover {
+        .icon {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
+        }
+    }
 }
 
+.btn-primary {
+    background: $color-primary;
+    border-color: $color-primary;
+    &:hover {
+        background: $color-secondary;
+        border-color: $color-secondary;
+    }
+}
+
+.btn-secondary {
+    background: transparent;
+    border-color: $color-primary;
+    &:hover {
+        background: $color-secondary;
+        border-color: $color-secondary;
+    } 
+}
+
+.btn-lg {
+    padding: 19.6px 34px;
+    font-size: 16px;
+    .icon {
+        margin: 0 -14px 0 47px;
+        width: 27px;
+        height: 27px;
+        transition: .3s;
+    }
+}
 }
