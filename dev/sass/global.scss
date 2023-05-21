@@ -157,6 +157,8 @@ h6,
     border-radius: 90px;
     padding: 13px 17px;
     margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
     &:hover {
         .icon {
             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
@@ -264,4 +266,8 @@ h6,
 
 .scroll-heidden::-webkit-scrollbar {
     width: 0px;
+}
+
+.slick-track {
+	display: flex;
 }

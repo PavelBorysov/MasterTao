@@ -1,3 +1,16 @@
-.slick-track {
-	display: flex;
+header {
+    .nav-link {
+        color: #fff;
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            &.active {
+				color: $color-primary;
+			}
+        }
+    }
 }
