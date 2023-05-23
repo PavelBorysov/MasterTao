@@ -65,7 +65,14 @@ h6,
     font-size: 18px;
 }
 
-
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .container-xxl {
     max-width: 1820px;
@@ -150,13 +157,11 @@ h6,
 }
 
 .btn {
-    display: flex;
     font-weight: 600;
     font-size: 15px;
     line-height: 146%;
     border-radius: 90px;
     padding: 13px 17px;
-    margin-bottom: 10px;
     display: inline-flex;
     align-items: center;
     &:hover {
