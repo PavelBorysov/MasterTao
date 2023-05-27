@@ -19,23 +19,28 @@ header {
     }
 
     .navbar-nav {
-        max-width: 618px;
+        max-width: 647px;
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
-
+        padding-top: 5px;
         .nav-link {
             &.active {
                 color: $color-primary;
+            }
+            
+            &.disabled {
+                color: #ffebeb5e;
             }
         }
     }
 
     .btn {
-        padding: 13px 26.7px;
+        padding: 13px 26px;
         margin-left: 16px;
         white-space: nowrap;
+        letter-spacing: 0px;
     }
 
     .navbar-toggler {

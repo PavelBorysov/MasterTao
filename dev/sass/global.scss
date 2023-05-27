@@ -75,7 +75,7 @@ h6,
 }
 
 .container-xxl {
-    max-width: 1820px;
+    max-width: 1850px;
 }
 
 .wf-300 {
@@ -164,6 +164,7 @@ h6,
     padding: 13px 17px;
     display: inline-flex;
     align-items: center;
+    letter-spacing: 0.6px;
     &:hover {
         .icon {
             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
