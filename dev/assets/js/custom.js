@@ -8,7 +8,8 @@
         {
           breakpoint: 991,
           settings: {
-            arrows: false
+            arrows: false,
+            fade: true,
           }
         },
       ]

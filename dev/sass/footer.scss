@@ -1,13 +1,13 @@
-/*footer{
+footer {
     height: 100px;
     background: $color-secondary;
-    margin-top: auto;
-}*/
+    margin-top: 56px;
+}
 
- .markap {
+ .markap,
+ .github {
     position: fixed;
     left: 5px;
-    bottom: 10px;
     background-color: #000;
     color: #ffffff;
     text-decoration: none;
@@ -19,4 +19,12 @@
     &:hover {
         color: #379e5e;
     }
+ }
+
+ .markap {
+    bottom: 10px;
+ }
+
+ .github {
+    bottom: 43px;
  }

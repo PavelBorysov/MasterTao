@@ -1,19 +1,6 @@
 .first-screen {
     position: relative;
 
-    .slick-slide {
-        margin: 0 10px;
-        padding: 165px 0 228px;
-        border-radius: 22px;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .slick-list {
-        margin: 0 -10px;
-        border-radius: 22px;
-    }
-
     &__title {
         font-weight: 700;
         font-size: 56px;
@@ -31,10 +18,19 @@
         max-width: 336px;
     }
 
-    .btn-lg {
-        padding: 19.6px 28px;
+    .slick-slide {
+        margin: 0 10px;
+        padding: 165px 92px 228px;
+        border-radius: 22px;
+        background-position: center;
+        background-size: cover;
     }
 
+    .slick-list {
+        margin: 0 -10px;
+        border-radius: 22px;
+    }
+    
     .slick-dots {
         position: absolute;
         left: 50%;
@@ -71,22 +67,10 @@
         }
     }
 
-    .container-arrows {
-        position: absolute;
-        max-width: 1523px;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -24px);
-        display: flex;
-        justify-content: space-between;
-        height: 0;
-    }
-
     .slick-arrow {
         font-size: 0;
-        width: 46px;
-        height: 46px;
+        width: 92px;
+        height: 92px;
         background: center no-repeat transparent;
         border: none;
         background-image: url("data:image/svg+xml,%3Csvg width='24' height='42' viewBox='0 0 24 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.40237 41.2538C3.1171 41.5391 2.76051 41.6817 2.36827 41.6817C1.97602 41.6817 1.61943 41.5391 1.33416 41.2538C0.763614 40.6833 0.763614 39.7561 1.33416 39.1856L19.5202 20.9996L1.33416 2.81351C0.763614 2.24296 0.763614 1.31583 1.33416 0.74529C1.9047 0.174747 2.83183 0.174747 3.40237 0.74529L22.6225 19.9654C23.1931 20.536 23.1931 21.4631 22.6225 22.0337L3.40237 41.2538V41.2538Z' fill='white'/%3E%3C/svg%3E");
@@ -96,5 +80,21 @@
         &.slick-prev {
             transform: rotate(180deg);
         }
+    }
+
+    .container-arrows {
+        position: absolute;
+        max-width: 1565px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -47px);
+        display: flex;
+        justify-content: space-between;
+        height: 0;
+    }
+
+    .btn-lg {
+        padding: 19.6px 28px;
     }
 }
