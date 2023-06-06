@@ -67,7 +67,6 @@ h6,
 
 .container {
     max-width: 1170px;
-    padding: 0 15px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -115,6 +114,7 @@ h6,
     +label {
         display: flex;
         cursor: pointer;
+        
 
         &:before {
             content: "";
@@ -353,15 +353,35 @@ section {
     }
 
     &.col-md-7 {
-        i {
-            width: 85px;
-            height: 2px;
-            background: $color-secondary;
-            display: inline-block;
-            margin-bottom: 12px;
+        margin-bottom: 35px;
+        h2 {
+            &:after {
+                content: "";
+                position: static;
+                display: inline-block;
+                width: 85px;
+                height: 2px;
+                margin: 10px 10px 10px 19px;
+                background: $color-secondary;
+            }
         }
         &:after {
             display: none;
         }
     }
+}
+
+.input-box {
+    margin-bottom: 17px;
+
+    label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 126%;
+        margin-bottom: 6px;
+    }
+}
+
+.padding-top {
+    padding-top: 22px;
 }

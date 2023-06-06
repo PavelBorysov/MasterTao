@@ -15,3 +15,17 @@
       ]
     }); 
   });
+
+  function checkboxContainerPadding() {
+    const checkButton = document.querySelectorAll('.check-button');
+
+    checkButton.forEach(item => {
+      item.closest('[class*="col"]').classList.add('padding-top');
+    })
+  }
+  
+  if (document.querySelector('.calculation-form')) {
+    checkboxContainerPadding()
+  } else {
+    null
+  }

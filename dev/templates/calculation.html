@@ -1,0 +1,62 @@
+<section class="calculation">
+    <div class="container">
+        <div class="template-title text-left col-md-7">
+            <h2>Получить рассчет стоимости доставки вашего груза</h2>
+        </div>
+        <form class="calculation-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-box">
+                        <label for="category-shipment">Категория товара:</label>
+                        <input type="text" id="category-shipment" name="category-shipment" placeholder="Категория товара">
+                    </div>
+                    <div class="input-box">
+                        <label for="weight-shipment">Вес груза (кг):</label>
+                        <input type="number" id="weight-shipment" name="weight-shipment" placeholder="Введите вес">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-box">
+                        <label for="price-shipment">Стоимость груза:</label>
+                        <input type="number" id="price-shipment" name="price-shipment" placeholder="Введите стоимость">
+                    </div>
+                    <div class="input-box">
+                        <label for="size-shipment">Объем груза (м3):</label>
+                        <input type="number" id="size-shipment" name="size-shipment" placeholder="Введите объем">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-box">
+                        <div class="check-button">
+                            <input id="insurance" type="checkbox" name="insurance">
+                            <label for="insurance">Страховка</label>
+                        </div>
+                        <div class="check-button">
+                            <input id="customs-clearance" type="checkbox" name="customs-clearance">
+                            <label for="customs-clearance">Таможенное оформление</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-box">
+                        <label for="invoice-code">Код ТН ВЭД:</label>
+                        <input type="text" id="invoice-code" name="invoice-code" placeholder="Введите код">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <label for="file">first</label>
+                        <input type="file" id="fname" name="fname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn-lg">Следующий шаг<img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon"></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
