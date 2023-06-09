@@ -1,3 +1,21 @@
+.calculation {
+    margin-bottom: 113px;
+    .container {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: -55px;
+            bottom: -113px;
+            max-width: 626px;
+            width: 39vw;
+            height: 98vh;
+            background: url(../assets/img/calculation-bg.png) left bottom/contain no-repeat;
+        }
+    }
+}
+
 .calculation-form {
     max-width: 626px;
     width: 100%;
@@ -5,10 +23,13 @@
     border-radius: 20px;
     padding: 47px 47px 61px;
     margin: 0 0 0 15px;
+    box-shadow: 5px 15px 40px #1c1f2a;
+    position: relative;
 
     input {
         width: 100%;
     }
+
     [class*="col"] {
         padding-left: 15px;
         padding-right: 15px;
@@ -17,6 +38,7 @@
 
 input {
     transition: .2s;
+
     &[type="text"],
     &[type="number"] {
         background: #fff;
@@ -26,15 +48,81 @@ input {
         font-size: 15px;
         line-height: 126%;
         border: none;
-    
-    &:hover {
-        box-shadow: 0px 0px 5px 2.3px $color-primary;
-    }
-    &:focus {
-        box-shadow: 0px 0px 5px 2.3px $color-secondary;
-    }
-    &:focus-visible {
-        outline: none;
+
+        &:hover {
+            box-shadow: 0px 0px 5px 2.3px $color-primary;
+        }
+
+        &:focus {
+            box-shadow: 0px 0px 5px 2.3px $color-secondary;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
     }
 }
+
+.file-row {
+    display: flex;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.label-file {
+    border: 1px dashed #ffffff42;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 126%;
+    padding: 11px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 26px;
+
+    &:hover {
+        color: $color-secondary;
+        border-color: $color-secondary;
+    }
+}
+
+.input-file {
+    margin: 0;
+    display: none;
+}
+
+.file-row__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border: 2px dotted #bdbdbd;
+    border-radius: 14px;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#file-name {
+    font-size: 15px;
+    line-height: 126%;
+    margin-bottom: 12px;
+    margin-top: 18px;
+    cursor: default;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
 }

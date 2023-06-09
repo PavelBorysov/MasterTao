@@ -1,4 +1,8 @@
 @media screen and (max-width: 991px) {
+    section, .first-screen {
+        margin-bottom: 56px;
+    }
+
     .container {
         padding-left: 20px;
         padding-right: 20px;
@@ -81,5 +85,56 @@
                 position: relative;
             }
         }
+    }
+
+    .template-title {
+        margin-bottom: 40px;
+        
+        h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &.text-left {
+            &:after {
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        &.col-lg-7 {
+            h2 {
+                &:after {
+                    position: absolute;
+                    left: 50%;
+                    top: calc(100% - 2px);
+                    transform: translate(-50%, 0);
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .calculation {
+        margin-bottom: 60px;
+        .container {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .calculation-form {
+        margin: 0 auto;
+        padding: 48px 27px 34px;
+    }
+
+    .padding-top {
+        padding-top: 9px;
+    }
+
+    #file-name {
+        margin-top: 5px;
+        margin-bottom: 18px;
     }
 }

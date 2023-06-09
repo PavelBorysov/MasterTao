@@ -1,6 +1,6 @@
 <section class="calculation">
     <div class="container">
-        <div class="template-title text-left col-md-7">
+        <div class="template-title text-left col-lg-7">
             <h2>Получить рассчет стоимости доставки вашего груза</h2>
         </div>
         <form class="calculation-form">
@@ -46,8 +46,16 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                        <label for="file">first</label>
-                        <input type="file" id="fname" name="fname">
+                    <div id="file-name">
+                        Имя Вашего файла
+                    </div>
+                        <div class="file-row">
+                            <label for="fileInput" class="label-file">Загрузить фото товара</label>
+                            <input class="input-file" id="fileInput" name="fileInput" type="file">
+                            <div class="file-row__text">
+                                Загрузить фото товара
+                            </div>
+                        </div>
                 </div>
             </div>
             <div class="row">
