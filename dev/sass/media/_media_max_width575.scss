@@ -2,9 +2,70 @@
     .calculation-form {
         .btn {
             width: 100%;
+
             .icon {
                 margin: 0 -14px 0 auto;
             }
+        }
+    }
+
+    .padding {
+        padding: 0 15px;
+    }
+
+    .delivery {
+        .slick-slide:after {
+            left: 15px;
+            right: 15px;
+        }
+
+        .slider-template__img-box {
+            margin-bottom: 43px;
+            padding: 0 15px;
+
+        }
+
+        .slider-template__btn-row {
+            padding: 0 30px;
+
+            .btn {
+                white-space: nowrap;
+                width: 138px;
+                min-width: 138px;
+            }
+        }
+    }
+
+    .slider-template {
+        width: 365px;
+        margin: 0 -15px;
+
+        .slick-slide {
+            padding: 0 0 27px;
+        }
+
+        .slick-dots {
+            margin-top: 33px;
+        }
+    }
+
+    section.delivery,
+    section.services {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .services {
+        .slider-template {
+           
+          
+            &__img-box {
+                left: 15px;
+                right: 15px;
+            }
+            
         }
     }
 }

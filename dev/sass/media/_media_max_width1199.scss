@@ -9,6 +9,23 @@
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .slider-template {
+        margin: 0 auto;
+        width: 780px;
+
+        .slick-arrow {
+            &.slick-prev {
+                left: -80px;
+            }
+            
+            &.slick-next {
+                right: -80px;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 1199px) {
 }
