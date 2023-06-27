@@ -4,8 +4,85 @@
             background-position: 20px;
         }
     }
+
     .calculation .container:after {
         right: 0;
+    }
+
+    .about {
+        .about__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .faq {
+        .accordion {
+            margin-right: 15px;
+        }
+    }
+
+    .faq-form {
+
+
+        .input-box {
+            input {
+
+                &[type="text"],
+                &[type="tel"],
+                &[type="email"],
+                &[name="question"] {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .cooperation-faq__first,
+    .cooperation-faq__second {
+
+
+
+        .cooperation-description__first,
+        .cooperation-description__second {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 149.5%;
+            margin: 0;
+
+            .dot {
+                &:before {
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        .cooperation-description__first {
+            p {
+                margin: 37px auto -6px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .cooperation-faq__second {
+        margin-top: 50px;
+    }
+
+
+
+    .cooperation-img {
+        width: 480px;
+        height: 350px;
+    }
+
+    .cooperation-faq__first {
+        .col-lg-6 {
+            &:last-child {
+                margin-top: 37px;
+            }
+        }
     }
 }
 
@@ -18,7 +95,7 @@
             &.slick-prev {
                 left: -80px;
             }
-            
+
             &.slick-next {
                 right: -80px;
             }
@@ -28,4 +105,50 @@
 
 
 @media screen and (max-width: 1199px) {
+    .cooperation-faq__first,
+    .cooperation-faq__second {
+
+        .cooperation-description__first,
+        .cooperation-description__second {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 149.5%;
+            margin: 0;
+            
+            .dot {
+                &:before {
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        .cooperation-description__first {
+            p {
+                &:nth-child(2),
+                &:nth-child(3) {
+                    margin-top: 15px;
+                }
+                }
+            }
+            
+            .cooperation-description__second {
+                p {
+                    &:nth-child(2) {
+                        margin: 15px 0px 20px 0;
+                    }
+                }
+            }
+        }
+
+
+    .cooperation-img {
+        width: 445px;
+        height: 330px;
+    }
+
+    footer {
+        .footer-info {
+            margin: 0 auto;
+        }
+    }
 }

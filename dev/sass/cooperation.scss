@@ -1,0 +1,53 @@
+.cooperation-faq__first,
+.cooperation-faq__second {
+
+    .cooperation-description__first,
+    .cooperation-description__second {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 156.5%;
+
+        .dot {
+            &:before {
+                position: relative;
+                display: inline-block;
+                content: "•";
+                top: 0;
+                left: 1px;
+                width: 11px;
+                height: 11px;
+            }
+        }
+    }
+
+    .cooperation-description__first {
+        margin: 0 37px 47px 0;
+
+        p {
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 28px;
+            }
+        }
+    }
+
+    .cooperation-description__second {
+        margin: 28px 20px 0px 18px;
+
+        p {
+            &:nth-child(2) {
+                margin: 27px 0 42px 0;
+            }
+        }
+    }
+
+    .cooperation-img {
+        box-shadow: 5px 15px 40px #1c1f2a;
+        border-radius: 20px;
+    }
+
+    .btn {
+        letter-spacing: -0.3px;
+    }
+}

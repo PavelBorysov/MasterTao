@@ -1,4 +1,5 @@
 @media screen and (max-width: 991px) {
+
     section,
     .first-screen {
         margin-bottom: 56px;
@@ -159,7 +160,7 @@
             padding-top: 12px;
         }
     }
-    
+
     .advantage-title {
         min-width: 263px;
         margin: 0 auto;
@@ -168,4 +169,124 @@
     .slider-template {
         width: 390px;
     }
+
+    .about {
+        .about__img {
+            margin: 25px auto 0;
+            width: 375px;
+        }
+    }
+
+    .faq {
+        .accordion {
+            margin: 0 auto;
+
+            .accordion-body {
+                padding: 0px 70px 12px 22px;
+                font-size: 14px;
+
+            }
+
+            .accordion-button.collapsed {
+                padding: 12px 22px;
+            }
+
+            .accordion-button {
+                padding: 16px 22px 10px;
+                font-size: 16px;
+                height: 64px;
+            }
+        }
+    }
+
+    .faq-form {
+        margin: 0 auto;
+        margin-top: 28px;
+        max-width: 335px;
+        padding: 38px 20px;
+
+        h3,
+        p {
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .input-box {
+            input {
+
+                &[type="text"],
+                &[type="tel"],
+                &[type="email"],
+                &[name="question"] {
+                    max-width: 295px;
+                }
+            }
+        }
+    }
+
+    .cooperation-faq__first,
+    .cooperation-faq__second {
+
+        .cooperation-description__first,
+        .cooperation-description__second {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 149.5%;
+            margin: 0;
+
+            .dot {
+                &:before {
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        .cooperation-description__first {
+            p {
+                margin: 37px auto -6px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .cooperation-faq__second {
+        margin-top: 50px;
+    }
+
+    .cooperation-description__second {
+        p {
+            margin: 31px auto -7px;
+            text-align: justify;
+            letter-spacing: -0.1px;
+        }
+    }
+
+    .cooperation-img {
+        width: 400px;
+        height: 270px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .btn {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .cooperation-faq__first {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+
+    footer {
+        .first-section {
+            text-align: center;
+            margin: 0 20px;
+        }
+    }
+
 }
