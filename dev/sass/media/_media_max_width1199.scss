@@ -39,48 +39,51 @@
         }
     }
 
-    .cooperation-faq__first,
-    .cooperation-faq__second {
+    .cooperation {
+
+        .cooperation-faq__first,
+        .cooperation-faq__second {
 
 
 
-        .cooperation-description__first,
-        .cooperation-description__second {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 149.5%;
-            margin: 0;
+            .cooperation-description__first,
+            .cooperation-description__second {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 149.5%;
+                margin: 0;
 
-            .dot {
-                &:before {
-                    margin-right: 4px;
+                .dot {
+                    &:before {
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            .cooperation-description__first {
+                p {
+                    margin: 37px auto -6px;
+                    text-align: justify;
                 }
             }
         }
 
-        .cooperation-description__first {
-            p {
-                margin: 37px auto -6px;
-                text-align: justify;
-            }
+        .cooperation-faq__second {
+            margin-top: 50px;
         }
-    }
-
-    .cooperation-faq__second {
-        margin-top: 50px;
-    }
 
 
 
-    .cooperation-img {
-        width: 480px;
-        height: 350px;
-    }
+        .cooperation-img {
+            width: 480px;
+            height: 350px;
+        }
 
-    .cooperation-faq__first {
-        .col-lg-6 {
-            &:last-child {
-                margin-top: 37px;
+        .cooperation-faq__first {
+            .col-lg-6 {
+                &:last-child {
+                    margin-top: 37px;
+                }
             }
         }
     }
@@ -101,36 +104,42 @@
             }
         }
     }
+
+
 }
 
 
 @media screen and (max-width: 1199px) {
-    .cooperation-faq__first,
-    .cooperation-faq__second {
 
-        .cooperation-description__first,
-        .cooperation-description__second {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 149.5%;
-            margin: 0;
-            
-            .dot {
-                &:before {
-                    margin-right: 4px;
+    .cooperation {
+
+        .cooperation-faq__first,
+        .cooperation-faq__second {
+
+            .cooperation-description__first,
+            .cooperation-description__second {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 149.5%;
+                margin: 0;
+
+                .dot {
+                    &:before {
+                        margin-right: 4px;
+                    }
                 }
             }
-        }
 
-        .cooperation-description__first {
-            p {
-                &:nth-child(2),
-                &:nth-child(3) {
-                    margin-top: 15px;
-                }
+            .cooperation-description__first {
+                p {
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        margin-top: 15px;
+                    }
                 }
             }
-            
+
             .cooperation-description__second {
                 p {
                     &:nth-child(2) {
@@ -141,9 +150,10 @@
         }
 
 
-    .cooperation-img {
-        width: 445px;
-        height: 330px;
+        .cooperation-img {
+            width: 445px;
+            height: 330px;
+        }
     }
 
     footer {
