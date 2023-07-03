@@ -64,13 +64,10 @@
 
     .services {
         .slider-template {
-
-
             &__img-box {
                 left: 15px;
                 right: 15px;
             }
-
         }
     }
 
@@ -142,47 +139,60 @@
     }
 
     .cooperation {
+
         .cooperation-faq__first,
-    .cooperation-faq__second {
+        .cooperation-faq__second {
 
-        .cooperation-description__first,
-        .cooperation-description__second {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 149.5%;
-            margin: 0;
-            
-            .dot {
-                &:before {
-                    margin-right: 4px;
+            .cooperation-description__first,
+            .cooperation-description__second {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 149.5%;
+                margin: 0;
+
+                .dot {
+                    &:before {
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            .cooperation-description__first {
+                p {
+                    margin: 37px auto -6px;
+                    text-align: justify;
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        margin-top: 30px;
+                    }
+                }
+            }
+
+            .cooperation-description__second {
+                p {
+                    margin: 31px auto -7px;
+                    text-align: justify;
+                    letter-spacing: -0.1px;
+
+                    &:nth-child(2) {
+                        margin: 29px 0px 35px 0;
+                    }
                 }
             }
         }
 
-        .cooperation-description__first {
-            p {
-                margin: 37px auto -6px;
-                text-align: justify;
-                }
-            }
+        .cooperation-faq__second {
+            margin-top: 50px;
         }
 
-      .cooperation-faq__second {
-        margin-top: 50px;
-      }
 
-        .cooperation-description__second {
-            p {
-                margin: 31px auto -7px;
-                text-align: justify;
-                letter-spacing: -0.1px;
-            }
-        }
 
         .cooperation-img {
-            width: 335px;
+            width: 100%;
             height: 220px;
         }
+
 
         .btn {
             margin-top: -10px;
@@ -191,14 +201,21 @@
             letter-spacing: -0.3px;
             width: 100%;
         }
+
         .cooperation-faq__first {
             display: flex;
             flex-direction: column-reverse;
+
+            .col-lg-6 {
+                &:last-child {
+                    margin-top: 0;
+                }
+            }
         }
-    
+
         .template-title h3 {
-            font-size: 16px;        
-    }
+            font-size: 16px;
+        }
     }
 
     footer {
@@ -207,7 +224,4 @@
             margin: 0 20px;
         }
     }
-    }
-
-
-
+}
