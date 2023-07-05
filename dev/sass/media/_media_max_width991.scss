@@ -63,6 +63,9 @@
 
     .first-screen {
         text-align: center;
+        padding: 0;
+        overflow: hidden;
+        
 
         &__title {
             font-size: 32px;
